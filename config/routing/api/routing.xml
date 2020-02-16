@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <system>
+        <route match="index" controller="index" action="index" />
+        <route match="error_404" controller="errors" action="error_404" />
+        <route match="error_403" controller="errors" action="error_403" />
+    </system>
+
+    <routes>
+
+        <route controller="" action="" match="api">
+            <route match="test" controller="test" action="index" />
+        </route>
+
+    </routes>
+</root>

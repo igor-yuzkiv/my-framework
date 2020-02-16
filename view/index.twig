@@ -1,0 +1,27 @@
+{% extends "template/main.twig" %}
+
+
+{% block content %}
+
+    {% set form = _service.__get("Form") %}
+
+    {{ form.open({id:"form", action:"/", method:"POST"}) }}
+        {{ form.text({name:"text"}) }}
+        {{ form.button({id: "go"}, "button") }}
+        {{ form.submit("submit") }}
+    {{ form.close() }}
+
+
+    <script>
+        $("#go").click(function () {
+           $.post(
+               "/",
+               {test:{ t:1, r:1 }},
+               function (data) {
+                   console.log(data)
+               }
+               )
+        });
+    </script>
+
+{% endblock %}

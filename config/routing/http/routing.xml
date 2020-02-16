@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <system>
+        <route match="index" controller="index" action="index" />
+        <route match="error_404" controller="errors" action="error_404" />
+        <route match="error_403" controller="errors" action="error_403" />
+    </system>
+
+    <routes>
+
+        <route controller="index" action="test" match="test"/>
+
+        <!--
+        <route controller="login" action="login" match="login-{error}"/>
+        <route controller="login" action="login" match="login">
+            <route controller="login" action="validation_login" match="validation_login"/>
+        </route> -->
+
+
+    </routes>
+</root>

@@ -1,0 +1,17 @@
+{
+    "name": "bood92/start",
+    "autoload": {
+      "classmap":[
+        "core/",
+        "core/db/",
+        "app/",
+        "app/Model",
+        "core/services"
+      ]
+    },
+    "require": {
+        "monolog/monolog": "^1.25",
+        "twig/twig": "*",
+        "twig/extensions": "^1.5"
+    }
+}
